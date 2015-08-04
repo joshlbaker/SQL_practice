@@ -106,12 +106,14 @@
 -- STRETCH CHALLENGES
 
 -- In the properties table, change the name of the column name to property_name.
-1) ALTER TABLE properties 
+1) 
+	 ALTER TABLE properties 
 	 RENAME COLUMN name 
 	 TO property_name;
 
 -- Count the total number of properties where the owner_id is between 1 and 3. 
-2) SELECT count(*) 
+2) 
+	 SELECT count(*) 
 	 FROM properties 
 	 WHERE (owner_id > 1) 
 	 AND (owner_id < 3); 
